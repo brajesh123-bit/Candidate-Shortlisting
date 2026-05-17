@@ -31,7 +31,7 @@ Create `backend/.env` from `.env.example`:
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 OPENROUTER_API_KEY=your_openrouter_api_key
-OPENROUTER_MODEL=google/gemma-2-9b-it:free
+OPENROUTER_MODEL=openrouter/free
 FRONTEND_URL=http://localhost:5173
 ```
 
@@ -58,7 +58,7 @@ Backend: `http://localhost:5000`
 
 If `MONGODB_URI` is not set, the backend automatically falls back to in-memory storage for quick demos. For real persistence and deployment, use MongoDB Atlas or a local MongoDB instance.
 
-By default, this project is configured to use `google/gemma-2-9b-it:free`. You can switch to any specific paid or free model later by changing `OPENROUTER_MODEL`.
+By default, this project is configured to use `openrouter/free`, which routes requests to an available free model on OpenRouter. You can switch to any specific paid or free model later by changing `OPENROUTER_MODEL`.
 
 ## API Endpoints
 

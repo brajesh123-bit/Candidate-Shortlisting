@@ -36,7 +36,7 @@ router.post("/ai/shortlist", async (req, res, next) => {
         candidates,
         job,
         apiKey: process.env.OPENROUTER_API_KEY,
-        model: process.env.OPENROUTER_MODEL || "google/gemma-2-9b-it:free",
+        model: process.env.OPENROUTER_MODEL || "openrouter/free",
       });
     } catch (error) {
       aiResult = {
